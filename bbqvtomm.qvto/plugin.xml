@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.m2m.qvt.oml.runtime.qvtTransformationContainer">
+      <sourceContainer
+            path="transforms">
+      </sourceContainer>
+   </extension>
+
+   <extension point="org.eclipse.m2m.qvt.oml.javaBlackboxUnits">
+      <unit name="MyLibrary" namespace="bbqvtomm.qvto">
+         <library name="MyLibrary" class="bbqvtomm.qvto.MyLibrary">
+            <metamodel nsURI="http://www.example.org/mymodel"/>
+         </library>
+      </unit>
+   </extension>
+
+</plugin>

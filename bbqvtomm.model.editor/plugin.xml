@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated mymodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="bbqvtomm.model.mymodel.presentation.MymodelModelWizardID"
+            name="%_UI_MymodelModelWizard_label"
+            class="bbqvtomm.model.mymodel.presentation.MymodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MymodelModelFile.gif">
+         <description>%_UI_MymodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated mymodel -->
+      <editor
+            id="bbqvtomm.model.mymodel.presentation.MymodelEditorID"
+            name="%_UI_MymodelEditor_label"
+            icon="icons/full/obj16/MymodelModelFile.gif"
+            extensions="mymodel"
+            class="bbqvtomm.model.mymodel.presentation.MymodelEditor"
+            contributorClass="bbqvtomm.model.mymodel.presentation.MymodelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

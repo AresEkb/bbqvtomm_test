@@ -1,0 +1,13 @@
+transformation NewTransformation();
+
+import bbqvtomm.qvto.MyLibrary;
+
+modeltype MY uses "http://www.example.org/mymodel";
+
+main() {
+    var obj := object MY::TestClass {
+        attr := 'Hello world';
+    };
+    log(obj.attr);
+    log(obj.getAttrUpperCase());
+}
