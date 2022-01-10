@@ -8,8 +8,12 @@
       </sourceContainer>
    </extension>
 
+   <extension point="org.eclipse.m2m.qvt.oml.runtime.qvtTransformation">
+      <library file="transforms/MyHelpers.qvto" id="MyHelpers"></library>
+   </extension>
+
    <extension point="org.eclipse.m2m.qvt.oml.javaBlackboxUnits">
-      <unit name="MyLibrary" namespace="bbqvtomm.qvto">
+      <unit name="MyLibrary" namespace="">
          <library name="MyLibrary" class="bbqvtomm.qvto.MyLibrary">
             <metamodel nsURI="http://www.example.org/mymodel"/>
          </library>

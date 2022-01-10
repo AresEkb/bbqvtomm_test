@@ -1,6 +1,6 @@
 transformation NewTransformation();
 
-import bbqvtomm.qvto.MyLibrary;
+import MyHelpers;
 
 modeltype MY uses "http://www.example.org/mymodel";
 
